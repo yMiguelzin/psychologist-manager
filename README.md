@@ -96,7 +96,7 @@ VALUES ('1', 'psicologo', '123123');
 
 ## Licença
 <a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-04D361?style=flat-square">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-780606?style=flat-square">
 </a>
 
 <br>
