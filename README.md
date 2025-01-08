@@ -114,4 +114,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 ---
 
-Feito com ❤️ by [Miguel Preto](https://github.com/yMiguelzin)
+Feito com ❤️ por [Miguel Preto](https://github.com/yMiguelzin)
