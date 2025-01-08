@@ -1,6 +1,15 @@
 # Sistema de Gestão de Psicólogos
 🧑🏻‍⚕️Sistema de Gerenciamento para Psicólogos com PHP | Projeto 
 
+<p>
+  <img src="https://img.shields.io/badge/made%20by-MIGUEL%20PRETO-FE251B?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/yMiguelzin/proffy?color=FE251B&style=flat-square">
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/yMiguelzin/proffy?color=FE251B&style=flat-square">
+  <a href="https://opensource.org/licenses/MIT">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-FE251B?style=flat-square">
+  </a>
+</p>
+
 ## Tópicos
 
 - [Sobre o Projeto](#sobre-o-projeto)  
@@ -96,7 +105,7 @@ VALUES ('1', 'psicologo', '123123');
 
 ## Licença
 <a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-780606?style=flat-square">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-FE251B?style=flat-square">
 </a>
 
 <br>
