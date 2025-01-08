@@ -1,6 +1,5 @@
 # Sistema de Gestão Hospitalar
-
-🏥 **Sistema de Gestão Hospitalar com PHP | Projeto**
+🧑🏻‍⚕️Sistema de Gerenciamento para Psicólogos com PHP | Projeto 
 
 <p>
   <img src="https://img.shields.io/badge/made%20by-MIGUEL%20PRETO-FE251B?style=flat-square">
@@ -23,17 +22,17 @@
 
 ## Sobre o Projeto
 
-Este projeto é um **sistema de gestão hospitalar**, desenvolvido com PHP, que permite aos médicos se cadastrarem, fazerem login e gerenciarem as consultas dos pacientes de forma eficaz. Com funcionalidades para criar, consultar, editar e excluir consultas, além de um banco de dados MySQL para persistência dos dados.
+Este projeto é um sistema simples de gestão para psicólogos, onde o psicólogo pode se cadastrar e também gerenciar as consultas dos pacientes. O sistema inclui funcionalidades para adicionar, editar, e excluir pacientes, com um banco de dados MySQL para persistência dos dados.
 
 <br>
 
 ## Funcionalidades
 
-- [X] Cadastro de médicos.
-- [X] Sistema de login para médicos.
-- [X] CRUD de consultas (Criar, Ler, Atualizar e Deletar).
-- [X] Cadastro de pacientes com informações como telefone, endereço e histórico médico.
-- [X] Relacionamento entre médicos e pacientes.
+- [X] Cadastro de psicólogos.
+- [X] CRUD de consultas de pacientes (Criar, Ler, Atualizar e Deletar).
+- [X] Sistema de login para psicólogos.
+- [X] Cadastro de pacientes com informações como telefone, gênero, data e horário da consulta.
+- [X] Relacionamento entre psicólogos e pacientes.
 
 <br>
 
@@ -62,35 +61,56 @@ Para rodar a aplicação, você precisa ter o **XAMPP** ou algum outro servidor 
 ### 2. Criação do Banco de Dados
 
 1. Abra o navegador e acesse o PHPMyAdmin no endereço [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/).
-2. No PHPMyAdmin, crie o banco de dados com o nome **projeto_js_php**.
+2. No PHPMyAdmin, crie o banco de dados com o nome **psicologia**.
    - No painel esquerdo, clique em **Novo**.
-   - Dê o nome ao banco de dados como `projeto_js_php` e clique em **Criar**.
+   - Dê o nome ao banco de dados como psicologia e clique em **Criar**.
 
-3. Após criar o banco de dados, selecione o banco **projeto_js_php** e crie as tabelas necessárias. Execute os seguintes comandos SQL na aba **SQL**:
+3. Após criar o banco de dados, selecione o banco **psicologia** e crie as tabelas necessárias. Execute os seguintes comandos SQL na aba **SQL**:
 
-```sql
--- Criação da tabela de usuários (médicos)
-CREATE TABLE usuarios (
-    usu_id INT PRIMARY KEY AUTO_INCREMENT,
-    usu_nome VARCHAR(255) NOT NULL,
-    usu_email VARCHAR(255) NOT NULL,
-    usu_senha VARCHAR(255) NOT NULL
+sql
+-- Criação da tabela de pacientes
+CREATE TABLE pacientes (
+    id VARCHAR(50) PRIMARY KEY,
+    paciente VARCHAR(50) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    genero VARCHAR(10) NOT NULL,
+    data VARCHAR(10) NOT NULL,
+    horario VARCHAR(5) NOT NULL,
+    psicologo VARCHAR(50) NOT NULL,
+    FK_CRP VARCHAR(50) NOT NULL
 );
 
--- Criação da tabela de clientes (pacientes)
-CREATE TABLE clientes (
-    cli_id INT PRIMARY KEY AUTO_INCREMENT,
-    cli_nome VARCHAR(255) NOT NULL,
-    cli_email VARCHAR(255) NOT NULL,
-    cli_telefone VARCHAR(15) NOT NULL,
-    cli_endereco VARCHAR(255) NOT NULL,
-    cli_nascimento DATE NOT NULL,
-    cli_convenio VARCHAR(255) NOT NULL
+-- Criação da tabela de psicólogos
+CREATE TABLE psicologo (
+    CRP VARCHAR(50) PRIMARY KEY,
+    psicologo VARCHAR(50) NOT NULL,
+    senha VARCHAR(50) NOT NULL
 );
 
-INSERT INTO usuarios (usu_nome, usu_email, usu_senha)
-VALUES ('Dr. João', 'joao@example.com', 'senha123');
-```
+-- Adicionando a restrição de chave estrangeira
+ALTER TABLE pacientes 
+ADD CONSTRAINT FK_CRP
+FOREIGN KEY (FK_CRP)
+REFERENCES psicologo(CRP);
+
+4. Para cadastrar um psicólogo inicial, execute o comando SQL abaixo no seu banco de dados:
+
+sql
+INSERT INTO `psicologo`(`CRP`, `psicologo`, `senha`) 
+VALUES ('1', 'psicologo', '123123');
+
 
 <br>
 
+## Licença
+<a href="https://opensource.org/licenses/MIT">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-FE251B?style=flat-square">
+</a>
+
+<br>
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+
+---
+
+Feito com ❤️ por [Miguel Preto](https://github.com/yMiguelzin)
