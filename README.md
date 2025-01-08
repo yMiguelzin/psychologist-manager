@@ -105,4 +105,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 ---
 
-Feito com :red_heart: by [Miguel Preto](https://github.com/yMiguelzin)
+Feito com ❤️ by [Miguel Preto](https://github.com/yMiguelzin)
