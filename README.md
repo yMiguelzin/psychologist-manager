@@ -2,7 +2,7 @@
 🧑🏻‍⚕️Sistema de Gerenciamento para Psicólogos com PHP | Projeto 
 
 <p>
-  <img src="https://img.shields.io/badge/made%20by-MIGUEL%20PRETO-FE251B?style=flat-square">
+  <img src="https://img.shields.io/badge/made%20by-Miguel%20Marostica-FE251B?style=flat-square">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/yMiguelzin/psychologist-manager?color=FE251B&style=flat-square">
   <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/yMiguelzin/psychologist-manager?color=FE251B&style=flat-square">
   <a href="https://opensource.org/licenses/MIT">
@@ -113,4 +113,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 ---
 
-Feito com ❤️ por [Miguel Preto](https://github.com/yMiguelzin)
+Feito com ❤️ por [Miguel Marostica](https://github.com/yMiguelzin)
